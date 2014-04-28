@@ -1,0 +1,17 @@
+{
+  "name": "mortgage-calculator",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha"
+  },
+  "author": "Ishmael Smyrnow",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "mocha": "^1.18.2",
+    "chai": "^1.9.1"
+  }
+}

@@ -13,5 +13,8 @@
   "devDependencies": {
     "mocha": "^1.18.2",
     "chai": "^1.9.1"
+  },
+  "dependencies": {
+    "node-print": "0.0.4"
   }
 }

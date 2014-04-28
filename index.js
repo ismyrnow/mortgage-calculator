@@ -1,13 +1,15 @@
 'use strict';
 
-var mortgage = require('./mortgage');
+var Mortgage = require('./mortgage');
 
-var totalAmount = 96000;
-var interest = 0.03875 / 12;
-var months = 20 * 12;
-var period = 2;
-var payment = mortgage.fixedMonthlyPayment(totalAmount, interest, months);
-var remaining = mortgage.remainingLoanBalance(totalAmount, interest, months, period);
+var amount = 96000;
+var interest = 0.03875;
+var years = 20;
+var afterMonths = 2;
+
+var mortgage = new Mortgage(amount, interest, years);
+var payment = mortgage.fixedMonthlyPayment();
+var remaining = mortgage.remainingLoanBalance(afterMonths);
 
 console.log('Fixed monthly payments: ' + payment);
-console.log('Remaining balance after ' + period + ' months: ' + remaining);
+console.log('Remaining balance after ' + afterMonths + ' months: ' + remaining);
